@@ -1,0 +1,26 @@
+@media (max-width: 998px) {
+
+    /* __________ Header __________ */
+
+    .header__burger--hidden {
+        visibility: hidden;
+        transition: visibility 0.25s ease-in-out;
+    }
+
+    .mobilesearch__uncapped {
+        justify-content: flex-start;
+        width: 98%;
+    }
+
+    .mobilesearch__uncapped-form {
+        padding-left: 15px;
+        width: 100%;
+    }
+
+    /* __________ Catalog __________ */
+
+    .names-catalog__artists {
+        column-count: 3;
+        column-gap: 10px;
+    }
+}

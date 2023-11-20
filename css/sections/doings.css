@@ -1,0 +1,199 @@
+/* __________ Doings __________ */
+
+.doings {
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
+
+.doings__body {
+    padding-left: 8px;
+}
+
+.doings__title {
+    margin-bottom: 16px;
+    font-weight: 400;
+    font-size: 48px;
+    line-height: 65px;
+    color: var(--color_gray);
+}
+
+.doings__slides {
+    position: relative;
+    align-items: center;
+}
+
+.doings__item {
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.item-doings__picture {
+    display: flex;
+}
+
+.item-doings__picture-image {
+    width: 100%;
+}
+
+.doings__swiper .doings__list {
+    height: auto;
+}
+
+.doings__item {
+    height: 100%;
+}
+
+.item-doings__block {
+    flex-direction: column;
+    padding: 12px 50px 38px 50px;
+    height: 100%;
+    border-left: 1px solid var(--color_lightgray-2);
+    border-right: 1px solid var(--color_lightgray-2);
+    border-bottom: 1px solid var(--color_lightgray-2);
+}
+
+.item-doings__info {
+    flex-direction: column;
+    padding: 5px 0 13px;
+    max-width: 245px;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 16px;
+    color: var(--color_gray-3);
+}
+
+.item-doings__title {
+    padding-bottom: 8px;
+    max-width: 340px;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 33px;
+    color: var(--color_gray);
+}
+
+.item-doings__descr {
+    margin-bottom: 67px;
+    max-width: 400px;
+    font-size: 16px;
+    line-height: 32px;
+    color: var(--color_gray);
+}
+
+.item-doings__link {
+    margin-top: auto;
+    max-width: 88px;
+    outline: none;
+    font-size: 16px;
+    line-height: 32px;
+    color: var(--color_purple);
+}
+
+.item-doings__link-more {
+    padding: 6px;
+    text-decoration-line: underline;
+    text-underline-offset: 6px;
+    text-decoration-color: var(--color_purple);
+    transition: all 0.25s ease-in-out;
+}
+
+/* ----- (focus, hover, active for DOINGS) ----- */
+
+@media (any-hover: hover) {
+    .item-doings__link:focus .item-doings__link-more {
+        padding: 6px;
+        color: var(--color_white);
+        background-color: var(--color_purple);
+        text-decoration-color: var(--color_white);
+        transition: all 0.25s ease-in-out;
+    }
+
+    .item-doings__link:hover .item-doings__link-more {
+        padding: 6px;
+        color: var(--color_purple-2);
+        background-color: transparent;
+        text-decoration-color: var(--color_purple-2);
+        transition: all 0.25s ease-in-out;
+    }
+}
+
+.item-doings__link:active .item-doings__link-more {
+    padding: 6px;
+    color: var(--color_gray);
+    background-color: transparent;
+    text-decoration-color: var(--color_gray);
+    transition: all 0.25s ease-in-out;
+}
+
+/* ----- Swiper for DOINGS ----- */
+
+.doings__swiper {
+    max-width: 1600px;
+    width: 100%;
+    overflow: hidden;
+}
+
+.doings__swiper-pagination {
+    display: none;
+}
+
+.doings__swiper-btn-prev-icon {
+    transform: rotate(180deg);
+}
+
+.doings__swiper-btn-prev-icon,
+.doings__swiper-btn-next-icon {
+    stroke: var(--color_black);
+}
+
+.doings__swiper-btn-prev,
+.doings__swiper-btn-next {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    background-color: var(--color_lightgray);
+    border: none;
+    border-radius: 100%;
+    opacity: 1;
+    transition: opacity 0.25s ease-in-out, background-color 0.25s ease-in-out;
+}
+
+.doings__swiper-btn-prev {
+    top: 45%;
+    left: -30px;
+    z-index: 2;
+}
+
+.doings__swiper-btn-next {
+    top: 45%;
+    right: -30px;
+    z-index: 2;
+}
+
+/* ----- (focus, hover, active for BUTTONS of DOINGS) ----- */
+
+@media (any-hover: hover) {
+
+    .doings__swiper-btn-prev:focus,
+    .doings__swiper-btn-next:focus {
+        outline: 2px solid var(--color_purple);
+    }
+
+    .doings__swiper-btn-prev:hover,
+    .doings__swiper-btn-next:hover {
+        background-color: var(--color_purple-4);
+        outline: none;
+        transition: background-color 0.25s ease-in-out;
+    }
+}
+
+.doings__swiper-btn-prev:active,
+.doings__swiper-btn-next:active {
+    outline: 2px solid var(--color_purple);
+}
+
+.doings__swiper-btn-prev.swiper-button-disabled,
+.doings__swiper-btn-next.swiper-button-disabled {
+    cursor: auto;
+    opacity: 0;
+    transition: opacity 0.25s ease-in-out;
+}

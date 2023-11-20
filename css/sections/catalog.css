@@ -1,0 +1,325 @@
+/* __________ Catalog __________ */
+
+.catalog {
+    padding-top: 80px;
+}
+
+.catalog__body {
+    padding-left: 8px;
+}
+
+.catalog__block {
+    justify-content: space-between;
+}
+
+.catalog__title {
+    font-weight: 600;
+    margin-bottom: 16px;
+    max-width: 250px;
+    font-weight: 400;
+    font-size: 48px;
+    line-height: 65px;
+    color: var(--color_gray);
+}
+
+.catalog__descr {
+    margin-bottom: 39px;
+    max-width: 1073px;
+    font-size: 16px;
+    line-height: 32px;
+    color: var(--color_gray);
+}
+
+.catalog__block-left {
+    display: none;
+    width: calc((754 / 1600) * 100%);
+}
+
+.artists__title {
+    padding-top: 30px;
+    padding-bottom: 7px;
+    max-width: 310px;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 33px;
+    color: var(--color_gray);
+}
+
+.artists__date {
+    max-width: 200px;
+    font-size: 12px;
+    line-height: 16px;
+    color: var(--color_gray-3);
+}
+
+.artists__descr {
+    padding-top: 13px;
+    max-width: 750px;
+    font-size: 16px;
+    line-height: 32px;
+    color: var(--color_gray);
+}
+
+.artists__link {
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 22px;
+    color: var(--color_purple);
+}
+
+.catalog__block-right {
+    padding-left: 8px;
+    width: calc((800 / 1600) * 100%);
+}
+
+.catalog__list {
+    flex-direction: column;
+}
+
+.catalog__years {
+    display: flex;
+    align-items: center;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 32px;
+    color: var(--color_gray);
+}
+
+.catalog__names {
+    font-size: 16px;
+    line-height: 32px;
+    color: var(--color_gray);
+}
+
+.names-catalog__artists {
+    justify-items: start;
+    column-count: 3;
+    column-gap: 57px;
+}
+
+.names-catalog__picture {
+    margin: 37px 0;
+    padding: 6px;
+    width: 251px;
+    height: 170px;
+    border: 2px solid var(--color_gray-3);
+}
+
+.names-catalog__info {
+    padding-top: 66px;
+    padding-left: 24px;
+}
+
+.names-catalog__subtitle {
+    margin-bottom: 5px;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 32px;
+    color: var(--color_gray);
+}
+
+.names-catalog__descr {
+    margin-bottom: 5px;
+    max-width: 280px;
+    font-size: 16px;
+    line-height: 22px;
+    color: var(--color_gray);
+}
+
+.names-catalog__link {
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 22px;
+    color: var(--color_purple);
+    border-bottom: 1px solid transparent;
+    outline: none;
+    transition: all 0.25s ease-in-out;
+}
+
+.names-catalog__artists-link {
+    display: block;
+    margin-bottom: -1px;
+    font-size: 16px;
+    line-height: 32px;
+    cursor: pointer;
+    border-bottom: 1px solid transparent;
+    transition: all 0.25s ease-in-out;
+}
+
+/* ----- (focus, hover, active for NAME of ARTISTS) ----- */
+
+@media (any-hover: hover) {
+    .names-catalog__artists-link:focus {
+        background-color: var(--color_purple);
+        outline: none;
+        transition: all 0.25s ease-in-out;
+    }
+
+    .names-catalog__artists-link:hover {
+        background-color: transparent;
+        border-bottom: 1px solid var(--color_purple);
+        transition: all 0.25s ease-in-out;
+    }
+
+    .names-catalog__link:focus {
+        color: var(--color_white);
+        background-color: var(--color_purple);
+        transition: all 0.25s ease-in-out;
+    }
+
+    .names-catalog__link:hover {
+        color: var(--color_purple-2);
+        background-color: transparent;
+        transition: all 0.25s ease-in-out;
+    }
+}
+
+.names-catalog__artists-link:active {
+    color: var(--color_purple-2);
+    background-color: transparent;
+    border-bottom: 1px solid transparent;
+    transition: all 0.25s ease-in-out;
+}
+
+.names-catalog__link:active {
+    color: var(--color_purple-2);
+    background-color: transparent;
+    border-bottom: 1px solid var(--color_purple-2);
+    transition: all 0.25s ease-in-out;
+}
+
+/* ----- (Tabs for CATALOG) ----- */
+
+.catalog__block-left--active {
+    display: block;
+}
+
+/* ----- (Accordion for CATALOG) ----- */
+
+.accordion-list {
+    padding: 0;
+}
+
+.accordion-item {
+    cursor: default;
+}
+
+.accordion-item:first-child .accordion-top {
+    border-top: 1px solid var(--color_lightgray-2);
+}
+
+.accordion-top {
+    display: flex;
+    justify-content: space-between;
+    margin-top: -1px;
+    margin-bottom: 0;
+    padding-top: 32px;
+    padding-bottom: 32px;
+    border-top: 1px solid transparent;
+    border-bottom: 1px solid var(--color_lightgray-2);
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+}
+
+.catalog__accordion-btn {
+    max-width: 50px;
+    width: 100%;
+    height: 50px;
+    background-color: var(--color_lightgray);
+    border: 2px solid var(--color_lightgray);
+    border-radius: 100%;
+    cursor: pointer;
+    transition-property: transform;
+    transition: all 0.2s ease-in-out;
+}
+
+.accordion-top .catalog__years {
+    transition: all 0.2s ease-in-out;
+}
+
+.accordion-item:active .catalog__accordion-btn {
+    transform: rotate(-180deg);
+}
+
+.accordion-top:active {
+    border-color: var(--color_purple-2);
+}
+
+.accordion-top:active .catalog__accordion-btn {
+    border-color: var(--color_purple);
+}
+
+.accordion-top:active .catalog__years {
+    color: var(--color_purple-2);
+}
+
+.accordion-item.is-active .accordion-top {
+    border-color: var(--color_purple-2);
+}
+
+.accordion-item.is-active .catalog__accordion-btn {
+    color: #fff;
+    background-color: var(--color_purple-4);
+    border: 2px solid var(--color_purple);
+    transform: rotate(-180deg);
+}
+
+.accordion-item.is-active .accordion-top .catalog__years {
+    color: var(--color_purple-2)
+}
+
+.accordion-item.is-active .accordion-top+.accordion-bottom {
+    position: relative;
+    z-index: 2;
+    border-bottom: 1px solid var(--color_lightgray-2);
+}
+
+.accordion-item.ac {
+    margin: 0;
+    border: none;
+}
+
+.accordion-bottom {
+    line-height: 2;
+}
+
+@media (any-hover: hover) {
+
+    .accordion-item:first-child .accordion-top:hover,
+    .accordion-top:hover {
+        border-color: var(--color_purple);
+    }
+
+    .accordion-top:focus-within {
+        position: relative;
+        z-index: 1;
+        border-color: var(--color_lightgray-2);
+    }
+
+    .accordion-top:hover .catalog__accordion-btn,
+    .accordion-top:focus-within .catalog__accordion-btn {
+        color: #fff;
+        background-color: var(--color_purple-4);
+        border-color: var(--color_purple-4);
+        outline: none;
+    }
+
+    .accordion-top:hover .catalog__years {
+        color: var(--color_purple);
+    }
+
+    .accordion-top:focus-within .catalog__years {
+        color: var(--color_white);
+        background-color: var(--color_purple);
+        transition: all 0.2s ease-in-out;
+    }
+
+    .accordion-top:focus-within {
+        outline: 0;
+    }
+
+    .is-active .accordion-top:focus-within .catalog__years {
+        color: var(--color_white);
+        background-color: var(--color_purple);
+    }
+}

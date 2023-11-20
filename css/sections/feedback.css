@@ -1,0 +1,162 @@
+/* __________ Feedback __________ */
+
+.feedback {
+    padding: 33px 0;
+    border: 1px solid var(--color_lightgray-2);
+}
+
+.feedback__body {
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 8px;
+    max-width: 1620px;
+}
+
+.address {
+    flex-direction: column;
+    margin-right: 10px;
+}
+
+.address__title {
+    max-width: 250px;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 32px;
+}
+
+.address__descr {
+    max-width: 270px;
+    font-size: 16px;
+    line-height: 32px;
+}
+
+.form__name,
+.form__tel {
+    flex-direction: column-reverse;
+    margin-right: 20px;
+}
+
+.form__input-name {
+    padding: 9px 0 9px 24px;
+    width: 270px;
+    height: 50px;
+    border: 1px solid var(--color_gray);
+    border-radius: var(--borrad);
+    transition: background-color 0.25s ease-in-out;
+}
+
+.just-validate-error-label {
+    margin-top: -20px !important;
+    margin-left: 25px !important;
+    font-size: 12px;
+    line-height: 16px;
+    color: var(--color_red) !important;
+}
+
+.form__input-tel {
+    padding: 9px 0 9px 24px;
+    width: 270px;
+    height: 50px;
+    border: 1px solid var(--color_gray);
+    border-radius: var(--borrad);
+    transition: background-color 0.25s ease-in-out;
+}
+
+.form__btn {
+    padding: 0 33px;
+    height: 50px;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 25px;
+    border: 2px solid var(--color_purple);
+    border-radius: var(--borrad);
+    color: var(--color_purple);
+    background-color: transparent;
+    cursor: pointer;
+    transition: color 0.25s ease-in-out, background-color 0.25s ease-in-out, border 0.25s ease-in-out;
+}
+
+.form__btn-mobile {
+    display: none;
+}
+
+.feedback__connection {
+    padding-top: 2px;
+}
+
+.connection__title {
+    margin-bottom: 7px;
+    max-width: 280px;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 32px;
+}
+
+.connection__networks-link-one {
+    margin-right: 15px;
+}
+
+.connection__networks-link-one,
+.connection__networks-link-two {
+    outline: none;
+}
+
+.networks-connection__one-icon {
+    fill: var(--color_green);
+    transition: opacity 0.25s ease-in-out;
+}
+
+.networks-connection__two-icon {
+    fill: var(--color_blue);
+    transition: opacity 0.25s ease-in-out;
+}
+
+/* ----- (focus, hover, active for FEEDBACK) ----- */
+
+@media (any-hover: hover) {
+
+    .form__input-name:focus,
+    .form__input-name:hover,
+    .form__input-tel:focus,
+    .form__input-tel:hover {
+        background-color: var(--color_lightgray);
+        transition: background-color 0.25s ease-in-out;
+    }
+
+    .form__btn:focus {
+        outline: 2px solid var(--color_purple-3);
+        outline-offset: 4px;
+    }
+
+    .form__btn:hover {
+        color: var(--color_white);
+        background-color: var(--color_purple);
+        outline: none;
+        transition: color 0.25s ease-in-out, background-color 0.25s ease-in-out, border 0.25s ease-in-out;
+    }
+
+    .connection__networks-link-one:focus .networks-connection__one-icon,
+    .connection__networks-link-one:hover .networks-connection__one-icon,
+    .connection__networks-link-two:focus .networks-connection__two-icon,
+    .connection__networks-link-two:hover .networks-connection__two-icon {
+        opacity: 0.5;
+        transition: opacity 0.25s ease-in-out;
+    }
+}
+
+.form__btn:active {
+    border: 2px solid var(--color_purple-4);
+    color: var(--color_white);
+    background-color: var(--color_purple-2);
+    outline: none;
+    transition: color 0.25s ease-in-out, background-color 0.25s ease-in-out, border 0.25s ease-in-out;
+}
+
+.connection__networks-link-one:active .networks-connection__one-icon,
+.connection__networks-link-two:active .networks-connection__two-icon {
+    outline: 2px solid var(--color_purple);
+    outline-offset: -1px;
+    border-radius: 100%;
+    opacity: 1;
+}

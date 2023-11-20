@@ -1,0 +1,26 @@
+/* __________ About __________ */
+
+.about {
+    padding-top: 80px;
+    padding-bottom: 70px;
+}
+
+.about__body {
+    padding-left: 8px;
+}
+
+.about__title {
+    width: 100%;
+    padding-bottom: 16px;
+    max-width: 250px;
+    font-weight: 400;
+    font-size: 48px;
+    line-height: 65px;
+    color: var(--color_gray);
+}
+
+.about__descr {
+    max-width: 1065px;
+    font-size: 16px;
+    line-height: 32px;
+}

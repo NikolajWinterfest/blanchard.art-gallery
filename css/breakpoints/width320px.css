@@ -1,0 +1,23 @@
+@media (max-width: 320px) {
+
+    /* __________ Hero __________ */
+
+    .hero__background-one {
+        background-image: url('../../img/hero/hero_background-1--320p.jpg');
+    }
+
+    .hero__background-two {
+        background-image: url('../../img/hero/hero_background-2--320p.jpg');
+    }
+
+    .hero__background-three {
+        background-image: url('../../img/hero/hero_background-3--320p.jpg');
+    }
+
+    /* __________ Yandex __________ */
+
+    #yandex-map {
+        max-width: 320px;
+        height: 320px;
+    }
+}

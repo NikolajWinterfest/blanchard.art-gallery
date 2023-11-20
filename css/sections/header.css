@@ -1,0 +1,463 @@
+/* ____________________ HEADER ____________________ */
+
+.header {
+    position: absolute;
+    z-index: 1000;
+    width: 100%;
+}
+
+.header__firstline {
+    padding: 28px 0;
+    height: 100px;
+    background-color: var(--color_black);
+}
+
+.header__firstbody {
+    align-items: center;
+}
+
+.header__logo {
+    margin-right: auto;
+    outline: 1px solid transparent;
+    outline-offset: 10px;
+    transition: outline 0.25s ease-in-out;
+}
+
+.header__logo-picture {
+    display: flex;
+}
+
+@media (any-hover: hover) {
+    .header__logo:focus {
+        outline: 1px solid var(--color_purple);
+        outline-offset: 10px;
+        transition: outline 0.25s ease-in-out;
+    }
+}
+
+.header__burger {
+    display: none;
+}
+
+.btn-menu--active>.menu-header__btn-icon {
+    transform: rotate(180deg);
+}
+
+.header__nav {
+    justify-content: space-between;
+    width: calc(1245 / 1600 * 100%);
+}
+
+.nav__list {
+    margin-right: auto;
+}
+
+.nav__item-link {
+    padding: 0 5px;
+    transition: 0.25s ease-in-out;
+}
+
+/* ----- (focus, hover, active for DATE) ----- */
+
+@media (any-hover: hover) {
+    .nav__item-link:focus {
+        background-color: var(--color_purple-2);
+        outline: 0px solid white;
+        transition: 0.25s ease-in-out;
+    }
+
+    .nav__item-link:hover {
+        color: var(--color_purple-3);
+        background-color: transparent;
+        transition: 0.25s ease-in-out;
+    }
+}
+
+.nav__item-link:active {
+    color: var(--color_purple-2);
+    background-color: transparent;
+    transition: 0.25s ease-in-out;
+}
+
+/* ---------- */
+
+.nav__item:not(:last-child) {
+    margin-right: 52px;
+}
+
+.nav__item-link {
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 25px;
+    color: var(--color_white);
+}
+
+.header__mobilesearch {
+    display: none;
+}
+
+.nav__btn-icon {
+    margin-right: 2px;
+    fill: var(--color_white);
+    transition: 0.25s ease-in-out;
+}
+
+.nav__btn {
+    cursor: pointer;
+    padding: 0 5px;
+    font-size: 18px;
+    line-height: 25px;
+    color: var(--color_white);
+    background-color: transparent;
+    border: transparent;
+    transition: 0.25s ease-in-out;
+}
+
+/* ----- (focus, hover, active for BUTTON) ----- */
+
+@media (any-hover: hover) {
+    .nav__btn:focus {
+        outline: 0px solid white;
+        background-color: var(--color_purple-2);
+        transition: 0.25s ease-in-out;
+    }
+
+    .nav__btn:hover {
+        color: var(--color_purple-3);
+        background-color: transparent;
+        transition: 0.25s ease-in-out;
+    }
+
+    .nav__btn:focus .nav__btn-icon {
+        fill: var(--color_white);
+        transition: 0.25s ease-in-out;
+    }
+
+    .nav__btn:hover .nav__btn-icon {
+        fill: var(--color_purple-3);
+        transition: 0.25s ease-in-out;
+    }
+}
+
+.nav__btn:active {
+    color: var(--color_purple);
+    background-color: transparent;
+    transition: 0.25s ease-in-out;
+}
+
+.nav__btn:active .nav__btn-icon {
+    fill: var(--color_purple-2);
+    transition: 0.25s ease-in-out;
+}
+
+/* ---------- */
+
+.header__secondline {
+    padding: 22px 0;
+    height: 70px;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.header__secondbody {
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header__list {
+    justify-content: space-between;
+    width: 66%;
+    font-size: 18px;
+    line-height: 25px;
+    color: var(--color_white);
+}
+
+.header__item {
+    position: relative;
+    margin-right: 5px;
+}
+
+.menu-header__btn {
+    padding: 0 5px;
+    border: none;
+    cursor: pointer;
+    font-size: 18px;
+    line-height: 25px;
+    color: var(--color_white);
+    background: transparent;
+    transition: 0.25s ease-in-out;
+}
+
+.menu-header__btn-icon {
+    stroke: var(--color_white);
+    transition: all 0.25s ease-in-out;
+}
+
+/* ----- (focus, hover, active for SECOND HEADER) ----- */
+
+@media (any-hover: hover) {
+    .menu-header__btn:focus {
+        outline: 0px solid white;
+        background-color: var(--color_purple-2);
+        transition: all 0.25s ease-in-out;
+    }
+
+    .menu-header__btn:hover {
+        color: var(--color_purple);
+        background-color: transparent;
+        transition: all 0.25s ease-in-out;
+    }
+
+    .menu-header__btn:hover .menu-header__btn-icon {
+        stroke: var(--color_purple);
+        transition: all 0.25s ease-in-out;
+    }
+}
+
+.menu-header__btn:active {
+    color: var(--color_purple-2);
+    background-color: transparent;
+    transition: all 0.25s ease-in-out;
+}
+
+.menu-header__btn:active .menu-header__btn-icon {
+    stroke: var(--color_purple-2);
+    transition: all 0.25s ease-in-out;
+}
+
+/* ----- banners ----- */
+
+.banner-realism-one {
+    background-image: url('../../img/header/realism_tintoretto.jpg');
+}
+
+.banner-realism-two {
+    background-image: url('../../img/header/realism_friedrich.jpg');
+}
+
+.banner-realism-three {
+    background-image: url('../../img/header/realism_leonardo.jpg');
+}
+
+.banner-realism-four {
+    background-image: url('../../img/header/realism_verrocchio.jpg');
+}
+
+.banner-impressionism-one {
+    background-image: url('../../img/header/impressionism_monet.jpg');
+}
+
+.banner-impressionism-two {
+    background-image: url('../../img/header/impressionism_sisley.jpg');
+}
+
+.banner-impressionism-three {
+    background-image: url('../../img/header/impressionism_manet.jpg');
+}
+
+.banner-impressionism-four {
+    background-image: url('../../img/header/impressionism_renoir.jpg');
+}
+
+.banner-post-impressionism-one {
+    background-image: url('../../img/header/post-Impressionism_van-gogh.jpg');
+}
+
+.banner-post-impressionism-two {
+    background-image: url('../../img/header/post-Impressionism_cezanne.jpg');
+}
+
+.banner-post-impressionism-three {
+    background-image: url('../../img/header/post-Impressionism_gauguin.jpg');
+}
+
+.banner-post-impressionism-four {
+    background-image: url('../../img/header/post-Impressionism_seurat.jpg');
+}
+
+.banner-avant-garde-one {
+    background-image: url('../../img/header/avant-garde_kandinsky.jpg');
+}
+
+.banner-avant-garde-two {
+    background-image: url('../../img/header/avant-garde_marinetti.jpg');
+}
+
+.banner-avant-garde-three {
+    background-image: url('../../img/header/avant-garde_malevich.jpg');
+}
+
+.banner-avant-garde-four {
+    background-image: url('../../img/header/avant-garde_picasso.jpg');
+}
+
+.banner-futurism-one {
+    background-image: url('../../img/header/futurism_carra.jpg');
+}
+
+.banner-futurism-two {
+    background-image: url('../../img/header/futurism_pratella.jpg');
+}
+
+.banner-futurism-three {
+    background-image: url('../../img/header/futurism_severini.jpg');
+}
+
+.banner-futurism-four {
+    background-image: url('../../img/header/futurism_balla.jpg');
+}
+
+.banner-realism-one,
+.banner-realism-two,
+.banner-realism-three,
+.banner-realism-four,
+.banner-impressionism-one,
+.banner-impressionism-two,
+.banner-impressionism-three,
+.banner-impressionism-four,
+.banner-post-impressionism-one,
+.banner-post-impressionism-two,
+.banner-post-impressionism-three,
+.banner-post-impressionism-four,
+.banner-avant-garde-one,
+.banner-avant-garde-two,
+.banner-avant-garde-three,
+.banner-avant-garde-four,
+.banner-futurism-one,
+.banner-futurism-two,
+.banner-futurism-three,
+.banner-futurism-four {
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* ---------- */
+
+.dropdown {
+    position: absolute;
+    top: 46px;
+    padding: 20px 20px 20px 40px;
+    width: 300px;
+    background-color: rgba(0, 0, 0, 0.5);
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility .3s ease-in-out, opacity .3s ease-in-out;
+}
+
+.dropdown__list {
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 19px;
+    color: var(--color_white);
+}
+
+.dropdown__item {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.dropdown__item-artist {
+    display: block;
+    padding: 9px 0 12px 14px;
+    min-height: 30px;
+    margin-bottom: 20px;
+    color: var(--color_white);
+    background-color: transparent;
+    border: 2px solid transparent;
+    outline-offset: -2px;
+    transition: background-color 0.25s ease-in-out, border 0.25s ease-in-out;
+}
+
+/* ----- (focus, hover, active for DROPDOWN) ----- */
+
+@media (any-hover: hover) {
+    .dropdown__item-artist:focus {
+        outline: none;
+        border: 2px solid var(--color_purple);
+        transition: border 0.25s ease-in-out;
+    }
+
+    .dropdown__item-artist:hover {
+        border: 2px solid var(--color_purple);
+        transition: border 0.25s ease-in-out;
+    }
+}
+
+.dropdown__item-artist:active {
+    background-color: rgba(194, 131, 243, 0.4);
+    border: 2px solid transparent;
+    transition: background-color 0.25s ease-in-out, border 0.25s ease-in-out;
+}
+
+/* ---------- */
+
+.dropdown__item:last-child {
+    margin-bottom: 0px;
+}
+
+.dropdown.dropdown--active {
+    visibility: visible;
+    opacity: 1;
+}
+
+.dropdown__simplebar {
+    padding-right: 20px;
+    height: 240px;
+}
+
+.dropdown__simplebar .simplebar-track.simplebar-vertical {
+    width: 2px;
+    background-color: var(--color_black);
+}
+
+.dropdown__simplebar .simplebar-scrollbar {
+    width: 2px;
+    background-color: var(--color_white);
+}
+
+.header__search {
+    align-items: center;
+}
+
+.header__search-btn {
+    margin-right: 5px;
+    padding: 0;
+    padding-top: 2px;
+    width: 25px;
+    height: 22px;
+    border: none;
+    background-color: transparent;
+}
+
+.header__search-btn-icon {
+    cursor: pointer;
+}
+
+.header__search-input {
+    max-width: 251px;
+    width: 100%;
+    font-size: 18px;
+    line-height: 25px;
+    color: var(--color_white);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.85);
+}
+
+.header__search-input::placeholder {
+    color: var(--color_white);
+    opacity: 0.85;
+}
+
+/* ----- (focus, hover, active for INPUT) ----- */
+
+@media (any-hover: hover) {
+    .header__search-btn:focus {
+        outline: 1px solid var(--color_purple);
+        outline-offset: 2px;
+    }
+
+    .header__search-input:focus {
+        border-bottom: 1px solid var(--color_purple-3);
+    }
+
+    .header__search-input:hover {
+        border-bottom: 1px solid var(--color_purple-3);
+    }
+}

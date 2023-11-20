@@ -1,0 +1,56 @@
+/* ____________________ FOOTER ____________________ */
+
+.footer {
+    padding: 48px 0 44px 0;
+    background-color: var(--color_black);
+}
+
+.footer__body {
+    justify-content: space-between;
+    padding-left: 8px;
+}
+
+.footer__logo {
+    outline: 1px solid transparent;
+    outline-offset: 10px;
+    transition: outline 0.25s ease-in-out;
+}
+
+.networks-footer__link-one {
+    margin-right: 15px;
+}
+
+.networks-footer__link-one,
+.networks-footer__link-two {
+    outline: none;
+}
+
+.networks-footer__link-one-icon,
+.networks-footer__link-two-icon {
+    fill: var(--color_lightgray-2);
+    transition: fill 0.25s ease-in-out;
+}
+
+/* ----- (focus, hover, active for FOOTER) ----- */
+
+@media (any-hover: hover) {
+    .footer__logo:focus {
+        outline: 1px solid var(--color_purple);
+        outline-offset: 10px;
+        transition: outline 0.25s ease-in-out;
+    }
+
+    .networks-footer__link-one:focus .networks-footer__link-one-icon,
+    .networks-footer__link-two:focus .networks-footer__link-two-icon,
+    .networks-footer__link-one:hover .networks-footer__link-one-icon,
+    .networks-footer__link-two:hover .networks-footer__link-two-icon {
+        fill: var(--color_white);
+        transition: fill 0.25s ease-in-out;
+    }
+}
+
+.networks-footer__link-one:active .networks-footer__link-one-icon,
+.networks-footer__link-two:active .networks-footer__link-two-icon {
+    fill: var(--color_purple);
+    transition: fill 0.25s ease-in-out;
+}

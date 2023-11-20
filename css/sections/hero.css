@@ -1,0 +1,111 @@
+/* ____________________ MAIN ____________________ */
+
+.main {
+    position: relative;
+}
+
+/* __________ Hero __________ */
+
+.hero {
+    position: relative;
+}
+
+.hero .hero__swiper {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 1;
+}
+
+.hero__body {
+    position: relative;
+    z-index: 5;
+    flex-direction: column;
+    padding-top: 233px;
+    padding-bottom: 123px;
+    padding-left: 8px;
+}
+
+.hero__h1 {
+    display: none;
+}
+
+.hero__title {
+    max-width: 597px;
+    font-weight: 700;
+    font-size: 72px;
+    line-height: 98px;
+    color: var(--color_white);
+}
+
+.hero__descr {
+    padding-bottom: 89px;
+    max-width: 550px;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 30px;
+    color: var(--color_white);
+}
+
+.hero__link {
+    padding: 19px 32px;
+    max-width: 314px;
+    width: 100%;
+    max-height: 70px;
+    height: 100%;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 25px;
+    color: var(--color_white);
+    background-color: var(--color_purple);
+    outline-offset: 4px;
+    border: 3px solid transparent;
+    border-radius: var(--borrad);
+    transition: background-color 0.25s ease-in-out, border 0.25s ease-in-out;
+}
+
+/* ----- (focus, hover, active for HERO) ----- */
+
+@media (any-hover: hover) {
+    .hero__link:focus {
+        outline: 2px solid var(--color_purple-3);
+        outline-offset: 4px;
+    }
+
+    .hero__link:hover {
+        outline: none;
+        border: 3px solid var(--color_purple-4);
+        transition: background-color 0.25s ease-in-out, border 0.25s ease-in-out;
+    }
+}
+
+.hero__link:active {
+    outline: none;
+    background-color: var(--color_purple-2);
+    transition: background-color 0.25s ease-in-out, border 0.25s ease-in-out;
+}
+
+/* ---------- */
+
+.hero__background-one {
+    background-image: url('../../img/hero/hero_background-1.jpg');
+}
+
+.hero__background-two {
+    background-image: url('../../img/hero/hero_background-2.jpg');
+}
+
+.hero__background-three {
+    background-image: url('../../img/hero/hero_background-3.jpg');
+}
+
+.hero__background-one,
+.hero__background-two,
+.hero__background-three {
+    min-height: 800px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}

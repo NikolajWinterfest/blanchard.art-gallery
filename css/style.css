@@ -1,0 +1,38 @@
+/* Fonts */
+@import url('fonts/fonts.css');
+
+/* Default Settings */
+@import url('globals/default.css');
+
+/* Global Settings */
+@import url('globals/global.css');
+
+/* Header Section */
+@import url('sections/header.css');
+
+/* Main and Hero Section */
+@import url('sections/hero.css');
+
+/* About Section */
+@import url('sections/about.css');
+
+/* Gallery Section */
+@import url('sections/gallery.css');
+
+/* Catalog Section */
+@import url('sections/catalog.css');
+
+/* Doings Section */
+@import url('sections/doings.css');
+
+/* Projects Section */
+@import url('sections/projects.css');
+
+/* Feedback Section */
+@import url('sections/feedback.css');
+
+/* Yandexmap Section */
+@import url('sections/yandexmap.css');
+
+/* Footer Section */
+@import url('sections/footer.css');

@@ -1,0 +1,21 @@
+/* __________ Yandex __________ */
+
+#yandex-map {
+    margin: 0 auto;
+    max-width: 1920px;
+    height: 700px;
+}
+
+[class*="ground-pane"] {
+    filter: grayscale(1);
+}
+
+.ymaps-2-1-79-controls__control,
+.ymaps-2-1-79-controls__control_toolbar,
+.ymaps-2-1-79-controls__control_toolbar .ymaps-2-1-79-user-selection-none,
+.ymaps-2-1-79-search .ymaps-2-1-79-search_layout_normal .ymaps-2-1-79-searchbox__normal-layout,
+.ymaps-2-1-79-controls__control_toolbar .ymaps-2-1-79-user-selection-none,
+.ymaps-2-1-79-map-copyrights-promo,
+.ymaps-2-1-79-copyright__wrap {
+    visibility: hidden;
+}

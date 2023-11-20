@@ -1,0 +1,76 @@
+@media (max-width: 1700px) {
+
+    /* __________  Header and Hero  __________ */
+
+    .nav__item:not(:last-child) {
+        margin-right: 27px;
+    }
+
+    .header__list {
+        width: 75%;
+    }
+
+    .header__item {
+        margin-right: 0px;
+    }
+
+    .header__search-input {
+        max-width: 175px;
+    }
+
+    /* __________ Gallery __________ */
+
+    .gallery__block-left {
+        margin-right: 39px;
+    }
+
+    /* __________ Catalog __________ */
+
+    .names-catalog__artists {
+        column-count: 3;
+        column-gap: 45px;
+    }
+
+    .names-catalog__artists-link {
+        text-align: left;
+    }
+
+    /* __________ Doings __________ */
+
+    .doings__list {
+        margin-bottom: 30px;
+    }
+
+    .doings__swiper-btn-prev,
+    .doings__swiper-btn-next {
+        display: none;
+    }
+
+    .doings__swiper-pagination {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .swiper-pagination-bullet {
+        margin-right: 8px !important;
+        width: 10px !important;
+        height: 10px !important;
+    }
+
+    /* __________ Projects __________ */
+
+    .projects__picture-image {
+        max-width: 220px;
+    }
+
+    /* __________ Feedback __________ */
+
+    .feedback__address {
+        padding-bottom: 27px;
+    }
+
+    .feedback__form {
+        padding-bottom: 28px;
+    }
+}
