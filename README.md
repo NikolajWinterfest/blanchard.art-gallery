@@ -6,7 +6,7 @@
 
 ### Цель проекта:
 
-Сверстать лендинг страницу по HTML макету [Blanchard](<https://www.figma.com/file/sV7zCNFp0yZBiRimO0yESX/Blanchard-(Copy)?type=design&mode=design&t=Z3InnSI4P4GlpX3p-0>)
+Сверстать лендинг страницу по макету [Blanchard](<https://www.figma.com/file/sV7zCNFp0yZBiRimO0yESX/Blanchard-(Copy)?type=design&mode=design&t=Z3InnSI4P4GlpX3p-0>)
 
 ### Задачи проекта:
 
@@ -18,7 +18,7 @@
 -   Стилизовать меню select с помощью Choice
 -   Tooltip, всплывающие пояснения к тексту при клике на кнопки i
 -   Inputmask, валидация форм (Имя пользователя, номер телефона)
--   Подключить API ключа Yandex для использования карты с меткой месторасположения здания галереи
+-   Подключить API ключ Yandex для использования карты с меткой месторасположения здания галереи
 -   Pixel Perfect
 -   Flexbox-вёрстка, без использования фреймворков
 -   Проверить валидаторы HTML и CSS на отсутствие ошибок, а также HTML Tree Generator на БЭМ
